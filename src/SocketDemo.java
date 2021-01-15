@@ -17,8 +17,7 @@ public class SocketDemo {
             out.flush();
 
             while(true) {
-                InputStream is = socket
-                        .getInputStream();
+                InputStream is = socket.getInputStream();
                 InputStreamReader isr = new InputStreamReader(is);
                 BufferedReader in = new BufferedReader(isr);
                 String serverMessage = in.readLine();
